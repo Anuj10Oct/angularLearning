@@ -1,0 +1,24 @@
+<!-- <h2>Employee List</h2> -->
+<dnt-header></dnt-header>
+<dnt-header></dnt-header>
+<dnt-header></dnt-header>
+
+<!-- interpolation -->
+{{name}}
+
+<!-- property binding -->
+
+<div  [hidden]="hidden" [innerText]="email"></div>
+
+<!-- Template reference -->
+<!-- THis is anti pattern, should not modified DOM directly for ts file -->
+<div #emailDiv></div>
+
+<!-- Event Binding -->
+<button class="btn btn-primary" (click)="toggle()">Toggle</button>
+
+<div *ngIf="hidden" [innerText]="email"></div>
+
+{{employee.id}}
+
+<dnt-employee-list></dnt-employee-list>>
